@@ -1,7 +1,7 @@
 with open("input.txt","r") as f:
     lines = f.readlines()
     count = 0
-    prev_sum = int(lines[1])
+    prev_sum = lines[1]
     for i in range(2,len(lines)):
         curr_sum = int(lines[i])+int(lines[i-1])+int(lines[i-2])
         
